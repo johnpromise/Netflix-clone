@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  General Css */
+
+body{
+    background-color: black;
+    padding-bottom: 200px;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)),
+    url(images/header-image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: clamp(7px, 2vw, 20px);
+    position: relative;
+}
+
+a{
+    color: white;
+}
+
+ul{
+    
+}
+
+IMG{
+    max-width: 100%;
+}
+
+#email{
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    outline: none;
+    padding: clamp(6px, 2.5vh, 25px);
+    border-radius: 3px;
+    
+    font-size: clamp(6px, 2.5vw, 25px);
+    color: white;
+    
+}
+
+#email:focus{
+    border: 1px solid white;
+    outline-color: white;
+}
+
+#email::placeholder{
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+/*  text   */
+.text-ssm{
+    font-size: clamp(10px, 2.8vw, 25px);
+    font-weight: 500;
+    line-height: 1.4;
+    }
+
+.text-sm{
+    font-size: clamp(17px, 3.5vw, 40px);
+    line-height: 1.4;
+}
+.text-lg{
+    font-size: clamp(18px, 4vw, 48px);
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+.text-xlg{
+    font-size: clamp(18px, 4.5vw, 48px);
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    
+}
+
+
+
+/* navbar */
+.Hero_logo_img{
+    height: clamp(10px, 3vh, 45px);
+    width: 20vw;
+}
+
+
+/* Container */
+.container{
+    margin: 0 auto;
+    padding: 10px 30px;
+    max-width: 1000px;
+}
+
+.container_sm{
+    margin: 250px auto;
+    padding: 0 30px;
+    max-width: 550px;
+    text-align: center;
+    
+}
+
+
+.hero_button a{
+    text-decoration: none;
+    font-size: clamp(15px, 4.5vw, 45px);
+    background: RGB(180,0,0);
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+.container_sm h1{
+    color: #fff;
+    font-size: clamp(0.8rem, 8vw, 4rem);
+    width: clamp(300px, 60vw, 500px);
+    line-height: clamp(0.9rem, 4vh, 5rem);
+    margin:0 auto 8px;
+}
+
+.container_sm h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.container_sm p{
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.15rem;
+}
+
+.container_sm button{
+    background: RGB(300,10,0,0.9);
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: clamp(6px, 2.5vw, 25px);
+    
+    border: none;
+    letter-spacing: 1.5px;
+}
+
+
+.hero_btn2{
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    
+}
+
+
+
+/* Main */
+
+/* Section 1*/
+.Grid_1{
+    display: Grid;
+    Grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 10px;
+    color: #fff;
+    
+}
+
+
+/* Section 2*/
+
+.faq-container {
+    color: white;
+}
+
+
+
+.faq-header-content{
+    font-size: clamp(15px, 4.2vw, 40px);
+    font-weight: 600;
+}
+
+
+
+.faq-block{
+    background-color: hsl(0,0%,15%);
+    height: clamp(5px, calc(10px + 4vh), 100px);
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: clamp(5px, calc(5px + 2vw), 25px);
+    
+    
+    margin-top: clamp(5px, calc(3px + 0.8vw), 15px);
+    position: relative;
+}
+
+.faq-block div{
+    position: absolute;
+    right: 15px;
+    
+    
+}
+
+
+
+
+
+/* Last section */
+
+.last-section {
+    color: #fff;
+}
+
+.last-container{
+    margin: 50px auto;
+    padding: 0 30px;
+    max-width: 1000px;
+    text-align: center;
+    
+    
+}
+
+.search-section{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.last-search{
+    width: clamp(10px, 80vw, 750px);
+    padding: 20px 10px;
+    background: transparent;
+    border: none;
+    box-shadow: 1px 1px 0px grey, -1px -1px 0px grey;
+    
+    font-size: 15px;
+    color: white;
+}
+
+.last-search:focus{
+    outline: 1px solid white;
+}
+
+
+.last-search::placeholder {
+    font-size: 30px;
+}
+
+.last-btn{
+    background: RGB(300,10,0);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: clamp(6px, 2.5vw, 25px);;
+    
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* footer */
+
+footer{
+    color: white;
+}
+
+footer a{
+    color: Grey;
+    
+}
+
+.footer-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer_Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    row-gap: 15px;
+    column-gap: 20px;
+    
+    margin-bottom: 100px;
+    
+}
+
+
+/*  footer-last-page */
+
+.last-part button{
+    width: 120px;
+    padding: 7px 10px;
+    font-size: clamp(7px, 3vw, 40px);
+    text-align: center;
+    color: #fff;
+    
+    
+    background: transparent;
+    border: none;
+    border: 3px;
+    outline: none;
+    box-shadow: 1px 1px 0px grey, -1px -1px 0px grey;
+    margin-bottom: 35px;
+}
+
+
+.last-part p:nth-child(2) {
+    margin-bottom: 20px;
+    color: Grey;
+}
+
+.last-part p:nth-child(3) {
+    color: Grey
+    }
+
+.last-part p a{
+    color: RGB(20, 80, 170);
+}
+
+
+
+
+
+
+
+@media (max-width: 700px){
+    Hero_logo_img{
+        width: 10px;
+    }
+    hero_button ul li a{
+        width: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
